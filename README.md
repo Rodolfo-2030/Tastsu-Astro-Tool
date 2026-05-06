@@ -33,6 +33,7 @@
   - [Contact](#contact)
 
 ---
+## ⚠️ Próximamente versión en inglés
 
 ## Español
 
@@ -60,7 +61,8 @@ No requiere instalación ni conexión a internet.
 - Optimizar la sesión de observación con parámetros claros.  
 
 ### Referencia
-*Texto basado en [AOACM](https://aoacm.com.ar/gora/viewtopic.php?t=104)*  
+Proyecto basado en planilla Excel, creada por Carlos Colazo, para Proyecto GORA (Grupo Observación de Rotación de Asteorides)
+[AOACM](https://aoacm.com.ar/gora/viewtopic.php?t=104)*  
 
 ### Origen del nombre
 TATSU proviene del apócope de **Tatsunokuchi**, ciudad de Fujisawa, Prefectura de Kanagawa, Japón.  
@@ -75,7 +77,9 @@ Este proyecto está bajo la licencia **MIT**. Consulta el archivo `LICENSE` para
 📫 Correo: rartola@unc.edu.ar  
 🌍 Ubicación: Córdoba, Argentina  
 
+
 ---
+##  ⚠️ English version coming soon
 
 ## English
 
@@ -103,7 +107,8 @@ No installation or internet connection required.
 - Optimize observation sessions with clear parameters.  
 
 ### Reference
-*Text based on [AOACM](https://aoacm.com.ar/gora/viewtopic.php?t=104)*  
+*Project based on an Excel spreadsheet created by Carlos Colazo, for the GORA Project (Asteroid Rotation Observation Group)
+[AOACM](https://aoacm.com.ar/gora/viewtopic.php?t=104)*
 
 ### Name origin
 TATSU comes from the apocope of **Tatsunokuchi**, a city in Fujisawa, Kanagawa Prefecture, Japan.  
