@@ -33,9 +33,17 @@
   - [Contact](#contact)
 
 ---
-## ⚠️ Próximamente versión en inglés
-
 ## Español
+
+⚠️ ### Instalación
+No requiere instalación ni conexión a internet.  
+1. Descarga el archivo `TATSU.html`.  
+2. Ábrelo en cualquier navegador moderno (Chrome, Firefox, Edge, Opera).  
+
+## 🌐 Archivo HTML
+
+- 🇪🇸 [Abrir archivo HTML principal](HTML/TATSU.html)  
+- 🇬🇧 Main HTML file — *Coming soon / Próximamente*
 
 ### Descripción
 TATSU es una herramienta web (un solo archivo `.html`) que asiste al astrónomo observacional en la planificación y ejecución de sesiones de fotometría de cuerpos menores del Sistema Solar: asteroides, cometas y TNOs.  
@@ -77,11 +85,18 @@ Este proyecto está bajo la licencia **MIT**. Consulta el archivo `LICENSE` para
 📫 Correo: rartola@unc.edu.ar  
 🌍 Ubicación: Córdoba, Argentina  
 
-
 ---
-##  ⚠️ English version coming soon
 
 ## English
+
+⚠️ ### Installation
+No installation or internet connection required.  
+1. Download the `TATSU.html` file.  
+2. Open it in any modern browser (Chrome, Firefox, Edge, Opera).  
+
+## 🌐 HTML File
+- 🇪🇸 Archivo HTML principal — *Disponible en Español*  
+- 🇬🇧 [Open main HTML file](HTML/TATSU.html) — *Coming soon*
 
 ### Description
 TATSU is a web tool (a single `.html` file) that assists the observational astronomer in planning and executing photometry sessions of minor bodies of the Solar System: asteroids, comets, and TNOs.  
