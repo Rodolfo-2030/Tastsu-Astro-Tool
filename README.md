@@ -6,11 +6,13 @@
   - [Aplicaciones](#aplicaciones)
   - [Referencia](#referencia)
   - [Origen del nombre](#origen-del-nombre)
+  - [Tecnología y asistencia](#tecnología-y-asistencia)
 - [English](#english)
   - [Features](#features)
   - [Applications](#applications)
   - [Reference](#reference)
   - [Name origin](#name-origin)
+  - [Technology and assistance](#technology-and-assistance)
 
 ---
 
@@ -36,6 +38,9 @@ No requiere instalación ni conexión a internet para su funcionamiento local. B
 ### Origen del nombre
 TATSU proviene del apócope de **Tatsunokuchi**, ciudad de Fujisawa, Prefectura de Kanagawa, Japón.  
 
+### Tecnología y asistencia
+El desarrollo de TATSU se realizó en **lenguaje Java**, con la asistencia de **Claude IA** y **Copilot** para optimizar el código y la documentación.
+
 ---
 
 ## English
@@ -58,4 +63,8 @@ It requires no installation or internet connection for local use. Simply open th
 *Text based on [AOACM](https://aoacm.com.ar/gora/viewtopic.php?t=104)*  
 
 ### Name origin
-TATSU comes from the apocope of **Tatsunokuchi**, a city in Fujisawa, Kanagawa Prefecture, Japan. 
+TATSU comes from the apocope of **Tatsunokuchi**, a city in Fujisawa, Kanagawa Prefecture, Japan.  
+
+### Technology and assistance
+The development of TATSU was carried out in **Java language**, with the assistance of **Claude AI** and **Copilot** to optimize the code and documentation.
+
