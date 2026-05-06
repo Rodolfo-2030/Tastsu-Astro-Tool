@@ -58,4 +58,4 @@ It requires no installation or internet connection for local use. Simply open th
 *Text based on [AOACM](https://aoacm.com.ar/gora/viewtopic.php?t=104)*  
 
 ### Name origin
-TATSU comes from the apocope of **Tatsunokuchi**, a city in Fujisawa, Kanagawa Prefecture, Japan.
+TATSU comes from the apocope of **Tatsunokuchi**, a city in Fujisawa, Kanagawa Prefecture, Japan. 
