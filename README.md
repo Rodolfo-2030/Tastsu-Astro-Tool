@@ -1,4 +1,4 @@
-# TATSU-Astro-Tool 🌌
+# 🌌 Tatsu Asteroid Tool V4.0
 
 ![GitHub stars](https://img.shields.io/github/stars/Rodolfo-2030/TATSU-Astro-Tool?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/Rodolfo-2030/TATSU-Astro-Tool?style=social)
@@ -8,37 +8,25 @@
 ![GitHub issues](https://img.shields.io/github/issues/Rodolfo-2030/TATSU-Astro-Tool)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/Rodolfo-2030/TATSU-Astro-Tool)
 
-## Índice / Table of Contents
-- [Español](#español)
-  - [Descripción](#descripción)
-  - [Funcionalidades](#funcionalidades)
-  - [Aplicaciones](#aplicaciones)
-  - [Instalación](#instalación)
-  - [Ejemplos de uso](#ejemplos-de-uso)
-  - [Referencia](#referencia)
-  - [Origen del nombre](#origen-del-nombre)
-  - [Tecnología y asistencia](#tecnología-y-asistencia)
-  - [Licencia](#licencia)
-  - [Contacto](#contacto)
-- [English](#english)
-  - [Description](#description)
-  - [Features](#features)
-  - [Applications](#applications)
-  - [Installation](#installation)
-  - [Usage examples](#usage-examples)
-  - [Reference](#reference)
-  - [Name origin](#name-origin)
-  - [Technology and assistance](#technology-and-assistance)
-  - [License](#license)
-  - [Contact](#contact)
-
 ---
-## ⚠️ Próximamente versión en inglés
 
-## Español
+## 🇪🇸 Documentación en Español
 
-### Descripción
-TATSU es una herramienta web (un solo archivo `.html`) que asiste al astrónomo observacional en la planificación y ejecución de sesiones de fotometría de cuerpos menores del Sistema Solar: asteroides, cometas y TNOs.  
+**TATSU** es una herramienta web (archivo único `.html`) que ayuda al astrónomo observacional en la planificación y ejecución de sesiones de fotometría de cuerpos menores del Sistema Solar: asteroides, cometas y TNOs.  
+✅ No requiere instalación ni conexión a internet: basta con abrir el archivo en cualquier navegador moderno.
+
+### 🚀 Acceso rápido
+- 📂 [Repositorio en GitHub](https://github.com/Rodolfo-2030/Tatsu-Asteroid-Tool)  
+- 📦 [Sección de Releases](https://github.com/Rodolfo-2030/Tatsu-Asteroid-Tool/releases)  
+- 🌐 [Sitio en GitHub Pages](https://rodolfo-2030.github.io/Tatsu-Asteroid-Tool/)  
+
+### 🔎 Características principales
+- 🕒 Calcula tiempos de exposición y permanencia en el FOV.  
+- 🌠 Ideal para fotometría de asteroides/cometas veloces y cuerpos menores débiles.  
+- 📡 Integración con efemérides de **JPL Horizons (NASA)**.  
+- ⚙️ Configuración persistente de observatorio y cálculo de crepúsculos (civil, náutico, astronómico).  
+- 🔗 Accesos externos integrados: StarAlt (IAC), ESO DSS, JPL Horizons.  
+- 🌍 Distribución libre y gratuita, con documentación bilingüe.  
 
 ### Funcionalidades
 1. Tiempo de permanencia del cuerpo dentro del FOV del equipo en una serie de capturas.  
@@ -61,8 +49,8 @@ No requiere instalación ni conexión a internet.
 - Optimizar la sesión de observación con parámetros claros.  
 
 ### Referencia
-Proyecto basado en planilla Excel, creada por Carlos Colazo, para Proyecto GORA (Grupo Observación de Rotación de Asteorides)
-[AOACM](https://aoacm.com.ar/gora/viewtopic.php?t=104)*  
+Proyecto basado en planilla Excel creada por **Carlos Colazo** para el Proyecto **GORA (Grupo Observación de Rotación de Asteroides)**  
+[AOACM](https://aoacm.com.ar/gora/viewtopic.php?t=104)  
 
 ### Origen del nombre
 TATSU proviene del apócope de **Tatsunokuchi**, ciudad de Fujisawa, Prefectura de Kanagawa, Japón.  
@@ -73,18 +61,32 @@ El desarrollo de TATSU se realizó en **lenguaje Java**, con la asistencia de **
 ### Licencia
 Este proyecto está bajo la licencia **MIT**. Consulta el archivo `LICENSE` para más detalles.  
 
-### Contacto
-📫 Correo: rartola@unc.edu.ar  
-🌍 Ubicación: Córdoba, Argentina  
-
+### 👨‍💻 Créditos
+- Autor: **Rodolfo A. Artola** · rartola@unc.edu.ar  
+- Planilla Excel base: **Carlos Colazo**  
+- Colaboración: **Marcos Anzola**  
 
 ---
-##  ⚠️ English version coming soon
 
-## English
+## 🇬🇧 Documentation in English
 
-### Description
-TATSU is a web tool (a single `.html` file) that assists the observational astronomer in planning and executing photometry sessions of minor bodies of the Solar System: asteroids, comets, and TNOs.  
+**TATSU** is a web tool (single `.html` file) that assists observational astronomers in planning and executing photometry sessions of minor bodies in the Solar System: asteroids, comets, and TNOs.  
+✅ No installation or internet required: just open the file in any modern browser.  
+
+📌 *All documentation will be bilingual. Full English version coming soon.*  
+
+### 🚀 Quick Access
+- 📂 [GitHub Repository](https://github.com/Rodolfo-2030/Tatsu-Asteroid-Tool)  
+- 📦 [Releases / Direct Downloads](https://github.com/Rodolfo-2030/Tatsu-Asteroid-Tool/releases)  
+- 🌐 [GitHub Pages Site](https://rodolfo-2030.github.io/Tatsu-Asteroid-Tool/)  
+
+### 🔎 Main Features
+- 🕒 Calculates exposure times and FOV permanence.  
+- 🌠 Ideal for photometry of fast-moving asteroids/comets and faint minor bodies.  
+- 📡 Integration with **JPL Horizons (NASA)** ephemerides.  
+- ⚙️ Persistent observatory configuration and twilight calculator (civil, nautical, astronomical).  
+- 🔗 Integrated external access: StarAlt (IAC), ESO DSS, JPL Horizons.  
+- 🌍 Free distribution with bilingual documentation.  
 
 ### Features
 1. Calculates the time the object remains within the FOV of the equipment during a series of captures.  
@@ -107,8 +109,8 @@ No installation or internet connection required.
 - Optimize observation sessions with clear parameters.  
 
 ### Reference
-*Project based on an Excel spreadsheet created by Carlos Colazo, for the GORA Project (Asteroid Rotation Observation Group)
-[AOACM](https://aoacm.com.ar/gora/viewtopic.php?t=104)*
+Project based on an Excel spreadsheet created by **Carlos Colazo** for the **GORA Project (Asteroid Rotation Observation Group)**  
+[AOACM](https://aoacm.com.ar/gora/viewtopic.php?t=104)  
 
 ### Name origin
 TATSU comes from the apocope of **Tatsunokuchi**, a city in Fujisawa, Kanagawa Prefecture, Japan.  
@@ -119,6 +121,8 @@ The development of TATSU was carried out in **Java language**, with the assistan
 ### License
 This project is licensed under the **MIT License**. See the `LICENSE` file for details.  
 
-### Contact
-📫 Email: rartola@unc.edu.ar  
-🌍 Location: Córdoba, Argentina  
+### 👨‍💻 Credits
+- Author: **Rodolfo A. Artola** · rartola@unc.edu.ar  
+- Excel Sheet Base: **Carlos Colazo**  
+- Collaboration: **Marcos Anzola**  
+ 
