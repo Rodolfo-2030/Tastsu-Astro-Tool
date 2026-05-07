@@ -9,6 +9,24 @@
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/Rodolfo-2030/TATSU-Astro-Tool)
 
 ---
+## 🛠️ Troubleshooting / Errores comunes
+
+### 🇪🇸 Español
+- ❌🔗 **Error 404 en enlaces** → ocurre si se usan rutas de *commits* en lugar de *releases/download*.  
+  ✅📂 **Solución** → copiar siempre los enlaces desde la sección **Assets** del Release.  
+
+- ❌🌐 **Error en GitHub Pages** → ocurre si la configuración apunta a `/docs` y esa carpeta no existe.  
+  ✅⚙️ **Solución** → configurar Pages para usar `/root` o crear la carpeta `/docs` con el archivo.  
+
+---
+
+### 🇬🇧 English
+- ❌🔗 **404 error in links** → happens if you use *commits* paths instead of *releases/download*.  
+  ✅📂 **Solution** → always copy links from the **Assets** section of the Release.  
+
+- ❌🌐 **GitHub Pages error** → occurs if the configuration points to `/docs` and that folder does not exist.  
+  ✅⚙️ **Solution** → configure Pages to use `/root` or create the `/docs` folder with the file.  
+
 
 ## 🇪🇸 Documentación en Español
 
