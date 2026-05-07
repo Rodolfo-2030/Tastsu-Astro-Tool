@@ -1,4 +1,5 @@
 Cómo usar / How to use
+
 ES: Abrir app/Tatsu_Asteroid_Tool_V4.0_Español.html en cualquier navegador moderno. Cargar efemérides JPL Horizons en la pestaña JPL HORIZONS o ingresar datos manualmente en OBSERVATORIO / MANUAL. Completar parámetros en CALCULADORA DE EXPOSICIÓN.
 EN: Open app/Tatsu_Asteroid_Tool_V4.0_Español.html in any modern browser. Load JPL Horizons ephemeris in the JPL HORIZONS tab or enter data manually in OBSERVATORY / MANUAL. Fill equipment parameters in the EXPOSURE CALCULATOR.
 
