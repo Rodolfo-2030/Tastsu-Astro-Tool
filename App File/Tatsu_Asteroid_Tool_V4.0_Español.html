@@ -522,7 +522,7 @@
               </div>
               <div class="input-group">
                 <label>Píxel (µm)</label>
-                <input type="number" id="c-px-w" id2="c-px-h" value="3.75" step="0.01" oninput="calcular()">
+                <input type="number" id="c-px-w" value="3.75" step="0.01" oninput="document.getElementById('c-px-h').value=this.value; calcular()">
               </div>
             </div>
             <div class="input-row">
@@ -1728,23 +1728,43 @@ function drawFOV() {
   var c=document.getElementById('fov-canvas'); if(!c) return;
   var ctx=c.getContext('2d'), W=c.width, H=c.height;
   ctx.clearRect(0,0,W,H); ctx.fillStyle='#010409'; ctx.fillRect(0,0,W,H);
-  ctx.strokeStyle='#30363d'; ctx.lineWidth=1.5; ctx.strokeRect(10,10,W-20,H-20);
+
+  // Rectángulo del sensor con proporciones REALES fovH:fovV
+  var margin=24;
+  var availW=W-margin*2, availH=H-margin*2;
+  var aspect=calcResult.fovH_as/calcResult.fovV_as;
+  var rW,rH;
+  if(availW/availH>aspect){ rH=availH; rW=rH*aspect; }
+  else                     { rW=availW; rH=rW/aspect; }
+  var rx=(W-rW)/2, ry=(H-rH)/2;
+
+  ctx.strokeStyle='#30363d'; ctx.lineWidth=1.5; ctx.strokeRect(rx,ry,rW,rH);
+
+  // Etiqueta FOV debajo del rectángulo
   ctx.fillStyle='#6e7681'; ctx.font='9px monospace';
-  ctx.fillText('FOV '+calcResult.fovH_am.toFixed(1)+"' x "+calcResult.fovV_am.toFixed(1)+"'",15,H-15);
-  var cx=W/2,cy=H/2;
+  ctx.fillText('FOV '+calcResult.fovH_am.toFixed(1)+"' x "+calcResult.fovV_am.toFixed(1)+"'",rx+4,ry+rH+14);
+
+  // Cruz central
+  var cx=W/2, cy=H/2;
   ctx.strokeStyle='#30363d'; ctx.lineWidth=0.5;
   ctx.beginPath();ctx.moveTo(cx-15,cy);ctx.lineTo(cx+15,cy);ctx.stroke();
   ctx.beginPath();ctx.moveTo(cx,cy-15);ctx.lineTo(cx,cy+15);ctx.stroke();
-  var scale=(W-20)/calcResult.fovH_as;
+
+  // Escala basada en ancho real del rectángulo
+  var scale=rW/calcResult.fovH_as;
+
   var bR=(calcResult.b_arcsec/2)*scale;
   ctx.strokeStyle='#58a6ff66';ctx.lineWidth=1;ctx.beginPath();ctx.arc(cx,cy,bR,0,2*Math.PI);ctx.stroke();
+
   var a15R=(calcResult.b_arcsec*1.5/2)*scale;
   ctx.strokeStyle='#58a6ff';ctx.lineWidth=1.5;ctx.setLineDash([4,3]);
   ctx.beginPath();ctx.arc(cx,cy,a15R,0,2*Math.PI);ctx.stroke();
+
   var a20R=(calcResult.b_arcsec*2.0/2)*scale;
   ctx.strokeStyle='#3fb950';ctx.lineWidth=1.5;ctx.setLineDash([3,4]);
   ctx.beginPath();ctx.arc(cx,cy,a20R,0,2*Math.PI);ctx.stroke();
   ctx.setLineDash([]);
+
   var paRad=calcResult.pa*Math.PI/180;
   var trailLen=Math.min(calcResult.vel*(calcResult.t20/60)*scale,70);
   var dx=Math.sin(paRad)*trailLen, dy=-Math.cos(paRad)*trailLen;
@@ -1755,13 +1775,16 @@ function drawFOV() {
   ctx.lineTo(cx+dx-6*Math.cos(ang-0.4),cy+dy-6*Math.sin(ang-0.4));
   ctx.lineTo(cx+dx-6*Math.cos(ang+0.4),cy+dy-6*Math.sin(ang+0.4));
   ctx.closePath();ctx.fill();
+
   ctx.font='9px monospace';
   ctx.fillStyle='#58a6ff';ctx.fillText('a=1.5b',cx+a15R+3,cy+4);
   ctx.fillStyle='#3fb950';ctx.fillText('a=2.0b',cx+a20R+3,cy+14);
   ctx.fillStyle='#d29922';ctx.fillText('trail t=2.0b',cx+5,cy-5);
+
+  // Norte — esquina superior derecha del rectángulo del sensor
   ctx.strokeStyle='#6e7681';ctx.lineWidth=1;
-  ctx.beginPath();ctx.moveTo(W-22,30);ctx.lineTo(W-22,20);ctx.stroke();
-  ctx.fillStyle='#6e7681';ctx.font='8px sans-serif';ctx.fillText('N',W-25,18);
+  ctx.beginPath();ctx.moveTo(rx+rW-12,ry+20);ctx.lineTo(rx+rW-12,ry+10);ctx.stroke();
+  ctx.fillStyle='#6e7681';ctx.font='8px sans-serif';ctx.fillText('N',rx+rW-16,ry+9);
 }
 function buildVelTable() {
   if(!calcResult) return;
